@@ -1,0 +1,41 @@
+print("Welcome to computer quiz!")
+
+playing = input("Do you want to play? ")
+
+if playing.upper() == "YES":
+    print("Let's play :)")
+    score = 0
+if playing.upper() == "NO":
+    print("BYE")
+    quit()
+answer = input("What is malware?")
+if answer.upper() == ('''MALWARE IS A MALICIOUS SOFTWARE DESIGNED TO HARM TO COMPUTER SYSTEM'''):
+    print('Correct!')
+    score += 1
+else:
+    print("Incorrect!")
+
+answer = input("What does GPU stand for? ")
+if answer.upper() == "GRAPHICS PROCESSING UNIT ":
+    
+    print('Correct!')
+    score += 1
+else:
+    print("Incorrect!")
+
+answer = input("What does RAM stand for? ")
+if answer.upper() == "RANDOM ACCESS MEMORY":
+    print('Correct!')
+    score += 1
+else:
+    print("Incorrect!")
+
+answer = input("What does PSU stand for? ")
+if answer.upper() == "POWER SUPPLY":
+    print('Correct!')
+    score += 1
+else:
+    print("Incorrect!")
+
+print("You got " + str(score) + " questions correct!")
+print("You got " + str((score / 4) * 100) + "%.")
